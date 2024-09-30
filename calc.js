@@ -2,6 +2,11 @@ const userInput = document.querySelector(".userInput");
 const result = document.querySelector(".result");
 const options = document.querySelectorAll(".options");
 const equals = document.querySelector("#equals");
+const clear = document.querySelector("#clear");
+
+function myClearFunction(){
+    userInput.value = "";
+ }
 
 function doCalculation(){
     //const update = userInput.value;
@@ -14,6 +19,6 @@ equals.addEventListener("click", doCalculation);
 for(let i = 0; i < options.length; i++){
     options[i].addEventListener("click", (e) => {
         userInput.value = userInput.value + e.target.value;
-    })
+    });
 }
 

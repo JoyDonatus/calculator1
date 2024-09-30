@@ -8,6 +8,16 @@ body{
     display: grid;
     place-items: center;
 }
+#linkToGoogle{
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+h1{
+    font-family: garamond;
+    font-size: 50px;
+    font-weight: 400;
+}
 
 div{
     height: auto;
