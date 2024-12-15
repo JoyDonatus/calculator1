@@ -22,3 +22,31 @@ for(let i = 0; i < options.length; i++){
     });
 }
 
+let years = 100;
+if ((years % 4) !== 0){
+  console.log(years + " is not a leap year");
+}
+else if (years % 4 === 0){
+     if (years%100 === 0 && years%400 === 0){
+        console.log(years + "is a leap year");
+     }
+     else if (years%100 === 0 && years%400 !== 0){
+        console.log(years + " is not a leap year");
+     }
+     else{
+        console.log(years + "is a leap year");
+     }
+}
+
+let n = 4;
+while (n > 0){
+    console.log("we have "+ n + " ties");
+    if (n%2 === 0){
+        console.log(n + " is divisible by 2");
+    }
+    else{
+        console.log(n + " is not divisible by 2");
+    }
+    n--;
+}
+
